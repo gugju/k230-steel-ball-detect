@@ -2,6 +2,20 @@
 
 Real-time steel ball (钢珠) detection and tracking system running on Canaan K230 development boards with CanMV firmware. Designed for robotic ball-chasing applications — the K230 detects balls via YOLOv8, displays results on LCD, streams video over WiFi, and sends coordinates to an MCU (MSPM0/STM32) via UART for closed-loop motor control.
 
+## 中文技术文档
+
+面向使用者的中文文档在 [docs/](docs/)：
+
+| 文档 | 内容 |
+|------|------|
+| [docs/01-硬件选型.md](docs/01-硬件选型.md) | 两种相机（亚博 / 庐山派）对照、选脚本、接线 |
+| [docs/02-图传方案.md](docs/02-图传方案.md) | 两种图传（AP+MJPEG / RTSP）对照与选用 |
+| [docs/03-部署与运行.md](docs/03-部署与运行.md) | 固件、模型、SD 卡、运行与排错 |
+| [docs/04-串口协议与MCU对接.md](docs/04-串口协议与MCU对接.md) | 11 字节坐标帧、与 MCU 联调 |
+| [docs/05-版本与调参.md](docs/05-版本与调参.md) | 版本历史、CONFIG 速查、现场调参 |
+
+MCU 固件侧见 [ball-balance-1350](https://github.com/gugju/ball-balance-1350)。
+
 ## Supported Hardware
 
 | Board | Variant Suffix | Camera | Display | UART | Notes |
